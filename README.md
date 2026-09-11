@@ -1,3 +1,13 @@
+# ARCHIVED. Do not install from this fork.
+
+This fork existed for one reason: to prove that the top-level `bin/` directory was what broke the claude.ai-hosted marketplace install. Removing it in commit `6124c34` made the sync succeed, with all 25 skills and 18 agents loading.
+
+**Upstream fixed this at the source in v2.2.6**, moving the launcher to `scripts/claude-seo` and calling it through CLAUDE_PLUGIN_ROOT. That keeps the CLI install path working, which deleting `bin/` here did not.
+
+**Install from [AgriciDaniel/claude-seo](https://github.com/AgriciDaniel/claude-seo) instead.** This copy is frozen, receives no fixes, and is kept only so the commit referenced in [issue #298](https://github.com/AgriciDaniel/claude-seo/issues/298) stays reachable.
+
+---
+
 ![Claude SEO cover: a Claude Code command palette with /seo audit, schema, geo, content, and backlinks commands over a dark CRT panel](assets/cover.svg)
 
 # Claude SEO: SEO Skill for Claude Code
